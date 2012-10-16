@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="author" content="{{ site.author.name }}" />
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/styles.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/pygment_trac.css">
+    <script src="{{ ASSET_PATH }}/js/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    {% include JB/analytics %}
+
+    <style>
+    .wrapper .header ul li{
+      text-align: center
+    }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header"><a href="{{ HOME_PATH }}">{{ site.title }}</a></h1>
+        <p class="header">{{ site.tagline }}</p>
+        <ul>
+	  <li><a href="{{ BASE_PATH }}/archive.html">Posts</a></li>
+	  <li><a href="{{ BASE_PATH }}/categories.html">Categories</a></li>
+	  <li><a href="{{ BASE_PATH }}/tags.html">Tags</a></li>
+        </ul>
+        {% if site.ads.google %}
+        <div class="misc ad">
+          <script type="text/javascript"><!--
+            google_ad_client = "{{ site.ads.google.client }}";
+            google_ad_slot = "{{ site.ads.google.slot }}";
+            google_ad_width = {{ site.ads.google.width }};
+            google_ad_height = {{ site.ads.google.height }};
+            //-->
+          </script>
+          <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+        </div>
+        {% endif %}
+        {% if site.author %}
+        <div class="misc vcard">
+          <h4 style="color:white;">About Me</h4>
+	  <p>25% Reading<br />
+	     25% Music<br />
+	     25% Programing<br />
+	     25% Day dreaming	  
+	  </p>
+        </div><!-- misc -->
+        {% endif %}
+      </header>
+
+      <section>
+      {{ content }}
+      </section>
+
+      <footer>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
