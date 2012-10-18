@@ -33,7 +33,10 @@ The first challenge is how to get all files from a folder.
 This can be done by a very basic cmdlet named Get-ChildItem.
 
 **Others**
-Unfinished.
+
+{% highlight powershell %}
+[string]$oldFile = Get-Item ./
+{% endhighlight %}
 
 ## Powershell Code
 The full powershell is below. The two folder paths are passed as parameters.

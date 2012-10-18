@@ -11,10 +11,6 @@ tagline: Supporting tagline
 
 {{ post.summary }}
 
-Date: {{ post.date }} 
-Tags: {% for tag in post.tags %}
-[{{ tag }}](/tags/{{ tag }})
-{% if forloop.last != true %} {% endif %}
-{% endfor %}		            
+Date: {{ post.date | date:"%B %e, %Y"}} 	            
 
 {% endfor %}
