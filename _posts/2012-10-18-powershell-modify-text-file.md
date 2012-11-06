@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Powershell: Modify Text File"
-category: powershell
-tags: [powershell, Beginner, File, Get-Content, Set-Content, System.IO.File]
+category: Powershell
+tags: [Powershell, Beginner, File, Get-Content, Set-Content, System.IO.File]
 ---
 {% include JB/setup %}
 Sometimes we need to modify a bunch of files, and a script can do this very easily.

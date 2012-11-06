@@ -2,7 +2,7 @@
 layout: post
 title: "Powershell: File Comparing"
 category: Powershell 
-tags: [powershell]
+tags: [Powershell]
 ---
 {% include JB/setup %}
 
